@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -29,10 +29,15 @@ about:
   home: https://pypi.org/project/pyDeprecate/
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'Collection of PyTorch native metrics for easy evaluating machine learning models'
+  summary: "Simple tooling for marking deprecated functions or classes and re-routing to the new successors' instance."
   description: |
-    Simple tooling for marking deprecated functions or classes and re-routing to the new successors' instance.
-  dev_url: https://github.com/PyTorchLightning/metrics
+    The common use-case is moving your functions across codebase or outsourcing some functionalities to new packages.
+    For most of these cases, you want to hold some compatibility, so you cannot simply remove past function,
+    and also for some time you want to warn users that functionality they have been using is moved and not it is
+    deprecated in favor of another function (which shall be used instead) and soon it will be removed completely.
+    Another good aspect is to do not overwhelm a user with too many warnings, so per function/class, this warning
+    is raised only N times in the preferable stream (warning, logger, etc.).
+  dev_url: https://github.com/Borda/pyDeprecate
 
 extra:
   recipe-maintainers:
