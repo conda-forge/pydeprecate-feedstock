@@ -1,5 +1,5 @@
 {% set name = "pyDeprecate" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c07e8ef5d9f40409183a952ddc288e7164c5d47644556077388c6b33c9aed545
+  sha256: 335742ec53b9d22a0a9ff4f3470300c94935f6e169c74b08aee14d871ca40e00
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -29,7 +29,7 @@ about:
   home: https://pypi.org/project/pyDeprecate/
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'Collection of PyTorch native metrics for easy evaluating machine learning models'
+  summary: Collection of PyTorch native metrics for easy evaluating machine learning models
   description: |
     Simple tooling for marking deprecated functions or classes and re-routing to the new successors' instance.
   dev_url: https://github.com/PyTorchLightning/metrics
