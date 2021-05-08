@@ -3,7 +3,7 @@ About pydeprecate
 
 Home: https://pypi.org/project/pyDeprecate/
 
-Package license: Apache-2.0
+Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydeprecate-feedstock/blob/master/LICENSE.txt)
 
