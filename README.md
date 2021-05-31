@@ -11,7 +11,12 @@ Summary: Simple tooling for marking deprecated functions or classes and re-routi
 
 Development: https://github.com/Borda/pyDeprecate
 
-Simple tooling for marking deprecated functions or classes and re-routing to the new successors' instance.
+The common use-case is moving your functions across codebase or outsourcing some functionalities to new packages.
+For most of these cases, you want to hold some compatibility, so you cannot simply remove past function,
+and also for some time you want to warn users that functionality they have been using is moved and not it is
+deprecated in favor of another function (which shall be used instead) and soon it will be removed completely.
+Another good aspect is to do not overwhelm a user with too many warnings, so per function/class, this warning
+is raised only N times in the preferable stream (warning, logger, etc.).
 
 
 Current build status
