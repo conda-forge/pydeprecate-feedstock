@@ -33,12 +33,11 @@ about:
   license_file: LICENSE
   summary: Simple tooling for marking deprecated functions or classes and re-routing to the new successors' instance.
   description: |
-    The common use-case is moving your functions across codebase or outsourcing some functionalities to new packages.
-    For most of these cases, you want to hold some compatibility, so you cannot simply remove past function,
-    and also for some time you want to warn users that functionality they have been using is moved and not it is
-    deprecated in favor of another function (which shall be used instead) and soon it will be removed completely.
-    Another good aspect is to do not overwhelm a user with too many warnings, so per function/class, this warning
-    is raised only N times in the preferable stream (warning, logger, etc.).
+    The pyDeprecate is a lightweight Python library for managing function and class deprecations with zero dependencies.
+    It provides automatic call forwarding to replacement functions, argument mapping between old and new APIs,
+    and configurable warning controls to prevent log spam. Key features include support for cross-module deprecations,
+    conditional deprecation logic, automatic docstring updates, and testing utilities. Perfect for library maintainers
+    who need to evolve their APIs while maintaining backward compatibility and providing clear migration paths for users.
   dev_url: https://github.com/Borda/pyDeprecate
 
 extra:
