@@ -29,7 +29,7 @@ test:
 
 about:
   home: https://pypi.org/project/pyDeprecate/
-  license: MIT
+  license: Apache-2.0
   license_file: LICENSE
   summary: Simple tooling for marking deprecated functions or classes and re-routing to the new successors' instance.
   description: |
