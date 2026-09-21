@@ -1,5 +1,5 @@
 {% set name = "pyDeprecate" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
-  sha256: deaad17532913f75cd66bbea651ada4624c981f6b5da35bfbb6a96077a1e19ab
+  sha256: 9d5549757d3d8180bba24196f9e1b05720f6dc5eeb4e5c707a15e58b61c0a646
 
 build:
   noarch: python
